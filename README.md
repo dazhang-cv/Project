@@ -1,4 +1,4 @@
-# S3D: Single Shot multi-Span Detector via Fully 3D Convolutional Network
+# Single Shot multi-Span Detector
 
 [BMVC 2018](http://bmvc2018.org/) oral paper [S3D: Single Shot multi-Span Detector via Fully 3D Convolutional Network](https://arxiv.org/pdf/1807.08069v2.pdf).
 
@@ -19,7 +19,7 @@ If you find our work useful, please use the following bibtex to cite our work:
 }
 ```
 
-# Dynamic Temporal Pyramid Network: A Closer Look at Multi-Scale Modeling for Activity Detection
+# Dynamic Temporal Pyramid Network
 
 [ACCV 2018](http://accv2018.net/) oral paper [Dynamic Temporal Pyramid Network: A Closer Look at Multi-Scale Modeling for Activity Detection](https://arxiv.org/pdf/1808.02536v1.pdf).
 
@@ -41,7 +41,7 @@ If you find our work useful, please use the following bibtex to cite our work:
 ```
 
 
-# MAN: Moment Alignment Network for Natural Language Moment Retrieval via Iterative Graph Adjustment
+# Moment Alignment Network for Natural Language Moment Retrieval
 
 [CVPR 2019](http://cvpr2019.thecvf.com/) paper [MAN: Moment Alignment Network for Natural Language Moment Retrieval via Iterative Graph Adjustment](https://arxiv.org/pdf/1812.00087.pdf).
 
@@ -62,3 +62,33 @@ If you find our work useful, please use the following bibtex to cite our work:
 }
 ```
 
+# Deep Reinforcement Learning Tracker
+
+Technical report [Deep Reinforcement Learning for Visual Object Tracking in Videos](https://arxiv.org/pdf/1701.08936v2.pdf).
+
+In this paper we introduce a fully end-to-end approach for visual tracking in videos that learns to predict the bounding box locations of a target object at every frame. An important insight is that the tracking problem can be considered as a sequential decision-making process and historical semantics encode highly relevant information for future decisions. Based on this intuition, we formulate our model as a recurrent convolutional neural network agent that interacts with a video overtime, and our model can be trained with reinforcement learning (RL) algorithms to learn good tracking policies that pay attention to continuous, inter-frame correlation and maximize tracking performance in the long run. The proposed tracking algorithm achieves state-of-the-art performance in an existing tracking benchmark and operates at frame-rates faster than real-time. To the best of our knowledge, our tracker is the first neural-network tracker that combines convolutional and recurrent networks with RL algorithms.
+
+## Network architecture
+
+<p align="center"><img width="90%" src="imgs/drlt.png" />
+
+## Reference
+If you find our work useful, please use the following bibtex to cite our work:
+```
+@article{zhang2017deep,
+  title={Deep reinforcement learning for visual object tracking in videos},
+  author={Zhang, Da and Maei, Hamid and Wang, Xin and Wang, Yuan-Fang},
+  journal={arXiv preprint arXiv:1701.08936},
+  year={2017}
+}
+```
+
+
+# Limitedly Supervised Activity Detection
+
+Under review.
+
+Existing activity detection methods largely adopt strong supervision for model training which requires both huge amounts of training videos for each activity category of interest and accurate temporal boundary annotations for every instance. This poses a critical restriction to the current methods in practical scenarios where not only temporal annotations are expensive to obtain but many activities are also unobserved in the training set. In this paper, we conceptualize a novel activity detection task called Limitedly Supervised Activity Detection (LSAD) where only video-level labels are available for untrimmed videos and the goal is to detect unseen activities with only a few labeled examples. To address this challenge, we propose the Structure Similarity Network (SSN) which directly learns deep multi-scale distance metrics between an untrimmed video and trimmed examples. We adopt the few-shot learning technique of Relation Network and encode both intra-video and inter-video similarities to detect temporal segments in an end-to-end manner. We evaluate the proposed method on two challenging public benchmarks THUMOS’14 and ActivityNet. Although trained under the LSAD setup, our SSN achieves performance superior or competitive to that of those state-of-the-art approaches with stronger supervision.
+
+## Reference
+Coming soon.
